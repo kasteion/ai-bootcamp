@@ -9,7 +9,7 @@ dependencies = [
     "groq>=0.32.0",
     "jupyter>=1.1.1",
     "minsearch>=0.0.7",
-    "openai>=2.2.0",
+    "openai-agents==0.3.3",
     "python-frontmatter>=1.1.0",
     "qdrant-client[fastembed]>=1.15.1",
     "requests>=2.32.5",
