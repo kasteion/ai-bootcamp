@@ -9,4 +9,4 @@ __pycache__/
 
 .envrc
 
-data_cache
+data_cache/youtube_videos
