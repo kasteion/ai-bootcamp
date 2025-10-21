@@ -6,11 +6,12 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "elasticsearch==9.1.1",
+    "fastmcp>=2.12.5",
     "groq>=0.32.0",
     "jupyter>=1.1.1",
     "minsearch>=0.0.7",
     "openai-agents==0.3.3",
-    "pydantic-ai>=1.1.0",
+    "pydantic-ai[mcp]>=1.1.0",
     "python-frontmatter>=1.1.0",
     "qdrant-client[fastembed]>=1.15.1",
     "requests>=2.32.5",
