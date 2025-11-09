@@ -10,6 +10,7 @@ dependencies = [
     "groq>=0.32.0",
     "jaxn>=0.0.1",
     "jupyter>=1.1.1",
+    "langwatch>=0.7.0",
     "minsearch>=0.0.7",
     "openai-agents==0.3.3",
     "psycopg[binary]>=3.2.12",
