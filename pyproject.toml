@@ -12,6 +12,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "minsearch>=0.0.7",
     "openai-agents==0.3.3",
+    "psycopg[binary]>=3.2.12",
     "pydantic-ai[mcp]>=1.1.0",
     "python-frontmatter>=1.1.0",
     "qdrant-client[fastembed]>=1.15.1",

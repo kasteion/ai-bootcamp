@@ -45,6 +45,9 @@ async def main():
 
     previous_text = ""
 
+    # Useful to log because we can show total time
+    # start = time()
+
     async with agent.run_stream(
         user_input, event_stream_handler=callback
     ) as result:
@@ -60,6 +63,8 @@ async def main():
                 parser.parse_incremental(delta)
                 previous_text = current_text
 
+        # end = time()
+        # total = end - start
         log_entry = await log_streamed_run(agent, result)
         save_log(log_entry)
 
