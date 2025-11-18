@@ -1,0 +1,163 @@
+{
+  "agent_name": "wikiagent",
+  "system_prompt": [
+    "\nYou are a helpful assistant that provides answers to user questions about Capybaras\n\nUse `get_page()` to get the content of this websites, summarize each website and then use `save_sumary()` to save the summary into the knowlege database:\n- https://en.wikipedia.org/wiki/Capybara\n- https://en.wikipedia.org/wiki/Lesser_capybara\n- https://en.wikipedia.org/wiki/Hydrochoerus\n\nUse the `search()` to search the knowledge database and try to answer the user question\n\nIMPORTANT: USE THE `input_guardrail()` FUNCTION TO VALIDATE THE USER INPUT BEFORE PROCESSING. STOP THE EXECUTION IF THE GUARDRAIL TRIGGERS.\n"
+  ],
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "tools": [
+    "get_page",
+    "search",
+    "save_summary",
+    "input_guardrail"
+  ],
+  "messages": [
+    {
+      "parts": [
+        {
+          "content": "What was is the history of math?",
+          "timestamp": "2025-11-18T17:49:00.394847+00:00",
+          "part_kind": "user-prompt"
+        }
+      ],
+      "instructions": "You are a helpful assistant that provides answers to user questions about Capybaras\n\nUse `get_page()` to get the content of this websites, summarize each website and then use `save_sumary()` to save the summary into the knowlege database:\n- https://en.wikipedia.org/wiki/Capybara\n- https://en.wikipedia.org/wiki/Lesser_capybara\n- https://en.wikipedia.org/wiki/Hydrochoerus\n\nUse the `search()` to search the knowledge database and try to answer the user question\n\nIMPORTANT: USE THE `input_guardrail()` FUNCTION TO VALIDATE THE USER INPUT BEFORE PROCESSING. STOP THE EXECUTION IF THE GUARDRAIL TRIGGERS.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "input_guardrail",
+          "args": "{\"message\":\"What was is the history of math?\"}",
+          "tool_call_id": "call_vmWDTZJldZSk9Q0pBbPzM0eg",
+          "id": null,
+          "part_kind": "tool-call"
+        }
+      ],
+      "usage": {
+        "input_tokens": 507,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 22,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-11-18T17:49:00+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "tool_calls"
+      },
+      "provider_response_id": "chatcmpl-CdK72K3Z0mRtYtGAkYEYVrxROaiKi",
+      "finish_reason": "tool_call"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "input_guardrail",
+          "content": {
+            "reasoning": "I can only answer questions about capybaras",
+            "fail": true
+          },
+          "tool_call_id": "call_vmWDTZJldZSk9Q0pBbPzM0eg",
+          "metadata": null,
+          "timestamp": "2025-11-18T17:49:01.331338+00:00",
+          "part_kind": "tool-return"
+        }
+      ],
+      "instructions": "You are a helpful assistant that provides answers to user questions about Capybaras\n\nUse `get_page()` to get the content of this websites, summarize each website and then use `save_sumary()` to save the summary into the knowlege database:\n- https://en.wikipedia.org/wiki/Capybara\n- https://en.wikipedia.org/wiki/Lesser_capybara\n- https://en.wikipedia.org/wiki/Hydrochoerus\n\nUse the `search()` to search the knowledge database and try to answer the user question\n\nIMPORTANT: USE THE `input_guardrail()` FUNCTION TO VALIDATE THE USER INPUT BEFORE PROCESSING. STOP THE EXECUTION IF THE GUARDRAIL TRIGGERS.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "content": "I'm sorry, but I can only answer questions related to capybaras. If you have any questions about them, feel free to ask!",
+          "id": null,
+          "part_kind": "text"
+        }
+      ],
+      "usage": {
+        "input_tokens": 557,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 30,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-11-18T17:49:01+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "stop"
+      },
+      "provider_response_id": "chatcmpl-CdK73YzWS9mbVE4LBVI4bYGkNByOU",
+      "finish_reason": "stop"
+    },
+    {
+      "parts": [
+        {
+          "content": "I'm sorry, but I can only answer questions related to capybaras. If you have any questions about them, feel free to ask!",
+          "id": null,
+          "part_kind": "text"
+        }
+      ],
+      "usage": {
+        "input_tokens": 557,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 30,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-11-18T17:49:01+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "stop"
+      },
+      "provider_response_id": "chatcmpl-CdK73YzWS9mbVE4LBVI4bYGkNByOU",
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "input_tokens": 1064,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 52,
+    "input_audio_tokens": 0,
+    "cache_audio_read_tokens": 0,
+    "output_audio_tokens": 0,
+    "details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "requests": 2,
+    "tool_calls": 1
+  },
+  "output": "I'm sorry, but I can only answer questions related to capybaras. If you have any questions about them, feel free to ask!"
+}

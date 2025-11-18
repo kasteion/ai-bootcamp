@@ -1,0 +1,8 @@
+[
+  {
+    "agent_name": "wikiagent",
+    "followed_instructions": true,
+    "answer_relevant": true,
+    "overall_pass": true
+  }
+]
